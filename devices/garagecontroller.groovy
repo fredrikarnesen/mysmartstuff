@@ -426,19 +426,19 @@ def configure() {
 		zwave.configurationV1.configurationGet(parameterNumber: 36),
         
 		// Set blink, sound, volume of opening action
-		zwave.configurationV1.configurationSet(parameterNumber: 37, size: 0, configurationValue: [5,1,1,0]),
+		zwave.configurationV1.configurationSet(parameterNumber: 37, size: 4, configurationValue: [5,1,1,0]),
 		zwave.configurationV1.configurationGet(parameterNumber: 37),
         
 		// set blink, sound, volume of closing action
-		zwave.configurationV1.configurationSet(parameterNumber: 38, size: 0, configurationValue: [10,2,1,0]),
+		zwave.configurationV1.configurationSet(parameterNumber: 38, size: 4, configurationValue: [5,2,1,0]),
 		zwave.configurationV1.configurationGet(parameterNumber: 38),
         
 		// set blink, sound, volume of unknown state
-		zwave.configurationV1.configurationSet(parameterNumber: 39, size: 0, configurationValue: [1,3,1,0]),
+		zwave.configurationV1.configurationSet(parameterNumber: 39, size: 4, configurationValue: [1,3,1,0]),
 		zwave.configurationV1.configurationGet(parameterNumber: 39),		
 
 		// set blink, sound, volume of CLOSED state
-		zwave.configurationV1.configurationSet(parameterNumber: 40, size: 0, configurationValue: [1,3,1,0]),
+		zwave.configurationV1.configurationSet(parameterNumber: 40, size: 4, configurationValue: [1,3,1,0]),
 		zwave.configurationV1.configurationGet(parameterNumber: 40),
 
 		// get battery state
